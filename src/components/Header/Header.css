@@ -1,0 +1,44 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-container {
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.filter-button.active {
+  background-color: #e0e0e0;
+}
+
+.filter-button:hover {
+  background-color: #ddd;
+}

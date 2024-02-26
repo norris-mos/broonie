@@ -1,0 +1,21 @@
+.sidebar {
+  width: 350px; /* Adjust width as needed */
+  background-color: #f0f0f0; /* Example background color */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sidebar-item {
+  display: block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  color: #333; /* Example text color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size as needed */
+  border-radius: 4px; /* Optional: to have rounded corners */
+}
+
+.sidebar-item:hover {
+  background-color: #ddd; /* Example hover state color */
+}
