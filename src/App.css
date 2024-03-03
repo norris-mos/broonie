@@ -10,14 +10,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #aec6cf; /* Updated to Pastel Blue */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #cfcfc4; /* Updated to Pastel Gray for text */
 }
 
 .App-link {
@@ -36,7 +36,7 @@
 .sidebar-item {
   display: block;
   margin: 10px 0;
-  color: #333;
+  color: #333; /* Consider lightening this for better integration */
   text-decoration: none;
 }
 
@@ -52,31 +52,28 @@
 
 .card-description {
   font-size: 14px;
-  color: #666;
+  color: #666; /* Adjust this to fit the pastel theme */
 }
 
 .badge {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #ff5f5f;
+  background-color: #ff5f5f; /* Consider a pastel variant for alerts */
   color: #fff;
   padding: 5px;
   border-radius: 50%;
 }
 
 /* App.css */
-
 .app {
-  margin: 2cm; /* Or use a different unit like 20px if preferred */
+  margin: 2cm;
   padding: 20px;
-  border-radius: 20px; /* This gives you the rounded edges */
-  background-color: #ffffff; /* Assuming you want a white container */
-  min-height: calc(
-    100vh - 4cm
-  ); /* 100% of the viewport height minus the margin */
-  display: flex; /* Using flexbox to layout the sidebar and card grid */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+  border-radius: 20px;
+  background-color: #aec6cf; /* Updated to Pastel Blue for the app background */
+  min-height: calc(100vh - 4cm);
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   flex-direction: column;
 }
 
@@ -109,4 +106,68 @@
   display: flex;
   flex-direction: row; /* SideBar and CardGrid side by side */
   /* ... other styles ... */
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Use full screen height */
+  background-color: #a8c0ff; /* Pastel Scottish blue color */
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-weight: 600; /* Semi-bold for a bit thicker appearance */
+  color: #333; /* Adjust the color as needed */
+  margin-bottom: 20px; /* Spacing below the welcome message */
+}
+
+.landing-page h1 {
+  font-size: 48px; /* Large size for the brand name */
+  font-weight: 700; /* Bold weight */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+  color: #333; /* Or any color that fits your brand */
+  text-transform: uppercase; /* Optional: adds stylistic emphasis */
+}
+
+.image-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%; /* Adjust based on your preference */
+  margin: 20px auto; /* Center the panel */
+  background-color: #a8c0ff; /* Example background color */
+  padding: 20px; /* Spacing around the images */
+}
+
+.image-container {
+  flex: 1; /* Each container takes equal space */
+  cursor: pointer;
+  margin: 10px;
+  text-align: center; /* Center the text under the images */
+  font-weight: 600; /* Semi-bold for a bit thicker appearance */
+  color: #333; /* Text color */
+  margin-top: 10px; /* Spacing between the image and the text */
+  font-size: 20px; /* Larger text size */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+}
+
+.image-container img {
+  width: 100%; /* Make images responsive within their containers */
+  height: auto;
+  display: block; /* Remove any extra space below the image */
+  border-radius: 20px; /* Rounded edges for the images */
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+}
+
+.image-container p {
+  margin-top: 10px; /* Spacing between the image and the text */
+  font-size: 20px; /* Larger text size */
+  color: #333; /* Text color */
+}
+
+.image-container:hover {
+  transform: scale(1.05); /* Slightly enlarge the image container */
+  opacity: 0.8; /* Slightly reduce opacity to give a hover effect */
 }
