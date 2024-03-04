@@ -1,0 +1,142 @@
+/* Main onboarding container */
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Add this to center vertically */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0; /* Reset margin to remove default spacing */
+  position: absolute; /* Positioning to help center */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Styling for each step card */
+.onboarding-step {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: auto; /* Changed to auto to center the card horizontally */
+  width: 90%;
+  max-width: 800px; /* Adjust the max-width to your preference */
+  max-height: 800px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Other styles remain unchanged */
+
+/* Header styling */
+.onboarding-header {
+  font-size: 24px;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+}
+
+/* Dropdown and form elements styling */
+.onboarding-dropdown,
+.onboarding-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styling */
+.onboarding-button {
+  background-color: #4b3f72; /* Button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.onboarding-button:hover {
+  background-color: #3a3159; /* Button hover state */
+}
+
+/* Progress indicator */
+.progress-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.filled {
+  background-color: #4b3f72; /* Filled indicator color */
+}
+
+/* Instructions or additional text */
+.onboarding-text {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4b3f72; /* Theme color */
+}
+
+/* You may need to add more CSS depending on additional elements or specifics of your layout. */
+/* Styling for form buttons */
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute buttons evenly */
+  gap: 10px; /* Add space between buttons */
+}
+
+.form-button {
+  flex-grow: 1;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.form-button:hover {
+  background-color: #4b3f72; /* Button hover state color */
+  color: #fff; /* Text color on hover */
+}
+
+/* Styling for curriculum buttons */
+.curriculum-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: stretch; /* Stretch buttons to fit container */
+  gap: 10px; /* Add space between buttons */
+}
+
+.curriculum-button {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.curriculum-button:hover {
+  background-color: #4b3f72; /* Button hover state color */
+  color: #fff; /* Text color on hover */
+}
