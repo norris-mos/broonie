@@ -26,7 +26,6 @@ const Header = ({ onSearch, onFilter }) => {
         <button onClick={() => onFilter('Content')} className="filter-button">
           Content
         </button>
-        // ... more buttons
       </div>
     </div>
   );
